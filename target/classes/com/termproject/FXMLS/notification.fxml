@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#gridOnClickAction" prefHeight="235.0" prefWidth="536.0" style="-fx-background-color: #880808;" stylesheets="@../css_files/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.termproject.Controllers.NotificationController">
+   <children>
+      <Label layoutX="15.0" layoutY="147.0" />
+      <Label fx:id="bloodGroupLabel" layoutX="104.0" layoutY="62.0" text="BG" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantityLabel" layoutX="72.0" layoutY="92.0" text="quantity" textFill="WHITE" />
+      <Label fx:id="locationLabel" layoutX="72.0" layoutY="119.0" text="Location" textFill="WHITE" />
+      <Label fx:id="timeLabel" layoutX="98.0" layoutY="147.0" text="blood need time" textFill="WHITE" />
+      <Label fx:id="phoneLabel" layoutX="70.0" layoutY="171.0" text="phone no" textFill="WHITE" />
+      <Label layoutX="15.0" layoutY="196.0" />
+      <Label fx:id="patientInfoLabel" layoutX="54.0" layoutY="196.0" text="why blood needed" textFill="WHITE" />
+      <ImageView fitHeight="42.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/account.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="10.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Posted for">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="135.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood!">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :" />
+      <Text layoutX="14.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location :" />
+      <Text layoutX="16.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date &amp; Time :" />
+      <Text layoutX="16.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :" />
+      <Text layoutX="15.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Case :" />
+      <Text fx:id="userLabel" layoutX="52.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post Creator">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+   <styleClass>
+      <String fx:value="shadow" />
+      <String fx:value="bloodPost-item" />
+   </styleClass>
+</AnchorPane>

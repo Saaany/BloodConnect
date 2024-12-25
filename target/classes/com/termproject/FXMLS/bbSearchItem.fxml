@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onMouseClicked="#gridOnClickAction" prefHeight="63.0" prefWidth="624.0" style="-fx-background-color: pink;" styleClass="shadow" stylesheets="@../css_files/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.termproject.Controllers.BBSearchItemController">
+   <children>
+      <Text fx:id="bbName" layoutX="189.0" layoutY="25.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Bank Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text fx:id="bbLocation" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="location" textAlignment="CENTER" wrappingWidth="540.8997490406036">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

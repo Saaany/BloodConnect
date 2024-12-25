@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.termproject.Controllers.BBManagerHomeController">
+    <top>
+        <AnchorPane prefHeight="93.0" prefWidth="850.0" style="-fx-background-color: AF140F;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="51.0" fitWidth="145.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../IMAGES/logo.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="847.0" layoutY="49.0" text="Log Out" />
+            <Label fx:id="bbNameLabel" layoutX="370.0" layoutY="22.0" text="Blood Bank Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Text fx:id="locationTextField" layoutX="370.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" />
+            <Button layoutX="851.0" layoutY="21.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" style="-fx-background-color: AF140F;" styleClass="cancelButton1" stylesheets="@../css_files/style2.css">
+               <graphic>
+                      <ImageView fx:id="logOutIcon" fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../icons/logout.png" />
+                          </image>
+                      </ImageView>
+               </graphic>
+            </Button>
+            </children>
+      </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane prefHeight="631.0" prefWidth="279.0" BorderPane.alignment="CENTER">
+            <children>
+            <ImageView fitHeight="628.0" fitWidth="283.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGES/bloodBG1.jpg" />
+               </image>
+            </ImageView>
+                <ImageView fx:id="managerImageView" fitHeight="55.0" fitWidth="93.0" layoutX="115.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icons/proPic.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="managerNameText" fill="WHITE" layoutX="59.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager" textAlignment="CENTER" wrappingWidth="168.583158493042">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Text>
+            <Button layoutX="30.0" layoutY="241.0" mnemonicParsing="false" onAction="#updateCountButtonOnAction" prefHeight="35.0" prefWidth="227.0" style="-fx-background-color: C61F19;" styleClass="cancelButton" stylesheets="@../css_files/style2.css" text="Update Count" textFill="WHITE" />
+            <Button layoutX="29.0" layoutY="191.0" mnemonicParsing="false" onAction="#profileButtonOnAction" prefHeight="35.0" prefWidth="226.0" style="-fx-background-color: C61F19;" styleClass="cancelButton" stylesheets="@../css_files/style2.css" text="Profile" textFill="WHITE" />
+            <Button layoutX="30.0" layoutY="288.0" mnemonicParsing="false" onAction="#eventsButtonOnAction" prefHeight="32.0" prefWidth="226.0" style="-fx-background-color: C61F19;" styleClass="cancelButton" stylesheets="@../css_files/style2.css" text="Events" textFill="WHITE" />
+            <Button layoutX="30.0" layoutY="334.0" mnemonicParsing="false" onAction="#showReqButtonOnAction" prefHeight="32.0" prefWidth="225.0" style="-fx-background-color: C61F19;" styleClass="cancelButton" stylesheets="@../css_files/style2.css" text="Show Requests" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </left>
+   <center>
+      <AnchorPane prefHeight="626.0" prefWidth="631.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="15.0" layoutY="157.0" prefHeight="131.0" prefWidth="134.0" style="-fx-background-color: #880808;">
+               <children>
+                  <Label fx:id="aplusCountLabel" alignment="CENTER" layoutX="33.0" layoutY="37.0" prefHeight="86.0" prefWidth="90.0" styleClass="shadow" stylesheets="@../css_files/style.css" text="count" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="93.0" layoutY="8.0" mnemonicParsing="false" onAction="#aplusIncrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-321.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="93.0" layoutY="31.0" mnemonicParsing="false" onAction="#aplusDecrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/substraction-323.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../css_files/style.css" />
+                  <URL value="@../css_files/style2.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="cancelButton1" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="15.0" layoutY="309.0" prefHeight="134.0" prefWidth="134.0" style="-fx-background-color: #880808;">
+               <children>
+                  <Label fx:id="aminusCountLabel" alignment="CENTER" layoutX="33.0" layoutY="37.0" prefHeight="86.0" prefWidth="90.0" styleClass="shadow" stylesheets="@../css_files/style.css" text="count" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A-">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="aminusIncrement" layoutX="93.0" layoutY="8.0" mnemonicParsing="false" onAction="#aminusIncrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-321.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="aminusDecrement" layoutX="93.0" layoutY="31.0" mnemonicParsing="false" onAction="#aminusDecrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/substraction-323.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../css_files/style.css" />
+                  <URL value="@../css_files/style2.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="cancelButton1" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="167.0" layoutY="157.0" prefHeight="131.0" prefWidth="131.0" style="-fx-background-color: #880808;">
+               <children>
+                  <Label fx:id="bplusCountLabel" alignment="CENTER" layoutX="33.0" layoutY="37.0" prefHeight="86.0" prefWidth="90.0" styleClass="shadow" stylesheets="@../css_files/style.css" text="count" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="93.0" layoutY="8.0" mnemonicParsing="false" onAction="#bplusIncrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-321.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="93.0" layoutY="31.0" mnemonicParsing="false" onAction="#bplusDecrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/substraction-323.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../css_files/style.css" />
+                  <URL value="@../css_files/style2.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="cancelButton1" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="167.0" layoutY="309.0" prefHeight="134.0" prefWidth="133.0" style="-fx-background-color: #880808;">
+               <children>
+                  <Label fx:id="bminusCountLabel" alignment="CENTER" layoutX="33.0" layoutY="37.0" prefHeight="86.0" prefWidth="90.0" styleClass="shadow" stylesheets="@../css_files/style.css" text="count" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B-">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="93.0" layoutY="8.0" mnemonicParsing="false" onAction="#bminusIncrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-321.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="93.0" layoutY="31.0" mnemonicParsing="false" onAction="#bminusDecrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/substraction-323.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../css_files/style.css" />
+                  <URL value="@../css_files/style2.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="cancelButton1" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="316.0" layoutY="157.0" prefHeight="132.0" prefWidth="133.0" style="-fx-background-color: #880808;">
+               <children>
+                  <Label fx:id="oplusCountLabel" alignment="CENTER" layoutX="33.0" layoutY="37.0" prefHeight="86.0" prefWidth="90.0" styleClass="shadow" stylesheets="@../css_files/style.css" text="count" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="93.0" layoutY="8.0" mnemonicParsing="false" onAction="#oplusIncrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-321.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="93.0" layoutY="31.0" mnemonicParsing="false" onAction="#oplusDecrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/substraction-323.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../css_files/style.css" />
+                  <URL value="@../css_files/style2.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="cancelButton1" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="316.0" layoutY="309.0" prefHeight="133.0" prefWidth="134.0" style="-fx-background-color: #880808;">
+               <children>
+                  <Label fx:id="ominusCountLabel" alignment="CENTER" layoutX="33.0" layoutY="37.0" prefHeight="86.0" prefWidth="90.0" styleClass="shadow" stylesheets="@../css_files/style.css" text="count" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O-">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="93.0" layoutY="8.0" mnemonicParsing="false" onAction="#ominusIncrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-321.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="93.0" layoutY="31.0" mnemonicParsing="false" onAction="#ominusDecrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/substraction-323.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../css_files/style.css" />
+                  <URL value="@../css_files/style2.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="cancelButton1" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="467.0" layoutY="157.0" prefHeight="130.0" prefWidth="133.0" style="-fx-background-color: #880808;">
+               <children>
+                  <Label fx:id="abplusCountLabel" alignment="CENTER" layoutX="33.0" layoutY="37.0" prefHeight="86.0" prefWidth="90.0" styleClass="shadow" stylesheets="@../css_files/style.css" text="count" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AB+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="93.0" layoutY="8.0" mnemonicParsing="false" onAction="#abplusIncrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-321.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="93.0" layoutY="31.0" mnemonicParsing="false" onAction="#abplusDecrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/substraction-323.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../css_files/style.css" />
+                  <URL value="@../css_files/style2.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="cancelButton1" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="467.0" layoutY="309.0" prefHeight="134.0" prefWidth="134.0" style="-fx-background-color: #880808;">
+               <children>
+                  <Label fx:id="abminusCountLabel" alignment="CENTER" layoutX="33.0" layoutY="37.0" prefHeight="86.0" prefWidth="90.0" styleClass="shadow" stylesheets="@../css_files/style.css" text="count" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AB-">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="93.0" layoutY="8.0" mnemonicParsing="false" onAction="#abminusIncrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/plus-321.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="93.0" layoutY="31.0" mnemonicParsing="false" onAction="#abminusDecrementOnAction" prefHeight="6.0" prefWidth="18.0" style="-fx-background-color: #880808;">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/substraction-323.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../css_files/style.css" />
+                  <URL value="@../css_files/style2.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="cancelButton1" />
+               </styleClass>
+            </AnchorPane>
+            <Text fill="#880808" layoutX="153.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLOOD IN STOCK">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button layoutX="43.0" layoutY="500.0" mnemonicParsing="false" onAction="#createNewEventButtonOnAction" prefHeight="50.0" prefWidth="547.0" styleClass="cancelButton" stylesheets="@../css_files/style2.css" text="Create New Events" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

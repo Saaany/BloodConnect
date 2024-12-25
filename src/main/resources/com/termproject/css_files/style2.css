@@ -1,0 +1,103 @@
+
+.userButton{
+    -fx-background-color:#880808;
+}
+.userButton:hover{
+     -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 0, 0);
+}
+
+.bloodBankManager{
+   -fx-background-color:#880808;
+}
+
+.bloodBankManager:hover{
+     -fx-font-weight: bold;
+      -fx-font-size: 20px;
+     -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 0, 0);
+}
+
+.loginButton{
+      -fx-background-color:#880808;
+}
+
+.loginButton:hover{
+     -fx-font-weight: bold;
+      -fx-font-size: 16px;
+     -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+
+.cancelButton{
+    -fx-background-color:#880808;
+}
+.cancelButton:hover{
+     -fx-font-weight: bold;
+      -fx-font-size: 16px;
+     -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+
+.signupButton{
+    -fx-background-color:#880808;
+}
+
+.signupButton:hover{
+        -fx-font-weight: bold;
+         -fx-font-size: 12px;
+        -fx-background-color:#B51D2B;
+       -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+
+
+
+.homeButton:hover{
+          -fx-font-weight: bold;
+          -fx-font-size: 13px;
+}
+
+.dropDownMenu{
+-fx-background-color:#880808;
+}
+.dropDownMenu:hover{
+        -fx-font-weight: bold;
+         -fx-font-size: 12px;
+        -fx-background-color:#B51D2B;
+       -fx-effect: dropshadow(three-pass-box, black, 6, 0, 0, 0);
+}
+
+.homeButton:hover{
+          -fx-effect: dropshadow(three-pass-box, black, 2, 0, 0, 0);
+}
+
+.cancelButton1{
+    -fx-background-color:#880808;
+}
+.cancelButton1:hover{
+     -fx-font-weight: bold;
+      -fx-font-size: 16px;
+     -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 18, 0, 0, 0);
+}
+
+custom-text-field  {
+    -fx-border-width: 2;
+    -fx-border-color: white;
+}
+
+custom-text-field:hover{
+    -fx-border-width: 2;
+    -fx-border-color: #909090;
+}
+
+custom-text-field:focused{
+    -fx-border-width: 2;
+    -fx-border-color: #0093EF;
+}
+
+.bgClass{
+    -fx-background-image: url("/IMAGES/bloodBG1.jpg");
+}

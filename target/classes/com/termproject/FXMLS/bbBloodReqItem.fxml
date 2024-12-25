@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="149.0" prefWidth="622.0" style="-fx-background-color: #880808;" stylesheets="@../css_files/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.termproject.Controllers.BBBloodReqItemController">
+    <children>
+        <Label fx:id="userLabel" layoutX="68.0" layoutY="27.0" text="Post Creator " textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Label>
+        <Label fx:id="bloodGroupLabel" layoutX="186.0" layoutY="53.0" text="BG" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="77.0" layoutY="95.0">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="41.0" layoutY="122.0" />
+        <Label fx:id="quantityLabel" layoutX="89.0" layoutY="99.0" text="quantity" textFill="WHITE" />
+        <Label layoutX="42.0" layoutY="177.0" />
+        <Label fx:id="timeLabel" layoutX="88.0" layoutY="121.0" text="blood need time" textFill="WHITE" />
+        <Label fx:id="phoneLabel" layoutX="503.0" layoutY="18.0" text="phone no" textFill="WHITE" />
+        <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="32.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/account.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="36.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :" />
+        <Text layoutX="32.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Date      :" />
+        <Text layoutX="36.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Text fontSmoothingType="LCD" layoutX="228.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood!">
+            <font>
+                <Font name="Bell MT Bold" size="24.0" />
+            </font>
+        </Text>
+      <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requested for ">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="30.0" fitWidth="21.0" layoutX="474.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/call.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="110.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bags." />
+      <Button fx:id="approveButton" layoutX="399.0" layoutY="112.0" mnemonicParsing="false" onAction="#approveButtonOnAction" prefHeight="26.0" prefWidth="86.0" text="Approve" visible="false" />
+      <Button fx:id="rejectButton" layoutX="517.0" layoutY="111.0" mnemonicParsing="false" onAction="#rejectButtonOnAction" prefHeight="26.0" prefWidth="86.0" text="Reject" visible="false" />
+      <Text fx:id="statusText" fill="WHITE" layoutX="330.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER" wrappingWidth="272.59368896484375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+    </children>
+    <styleClass>
+        <String fx:value="bloodPost-item" />
+        <String fx:value="shadow" />
+    </styleClass>
+</AnchorPane>

@@ -1,0 +1,120 @@
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.right-bar{
+    -fx-background-color: #D3D3D3;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0.1,0.2), 5.0 , 2.0 , 2.0 ,8.0);
+}
+
+.chosen-fruit-card{
+    -fx-background-color: #F16C31;
+    -fx-background-radius: 30;
+}
+
+.comboBox{
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 30;
+}
+
+.add-btn{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.free-delivery-card{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 30;
+}
+
+.shopping-online-card{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 30;
+}
+
+.bloodPost-item{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.text-color{
+    -fx-text-color: #880808;
+}
+.font-color{
+    -fx-text-color: white;
+}
+
+.loginButton:hover{
+   -fx-effect: dropshadow(three-pass-box, black, 20, 0, 0, 0);
+}
+
+.userButton{
+    -fx-background-color:#880808;
+}
+.userButton:hover{
+     -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 0, 0);
+}
+
+.bloodBankManager{
+   -fx-background-color:#880808;
+}
+
+.bloodBankManager:hover{
+     -fx-font-weight: bold;
+      -fx-font-size: 20px;
+     -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 20, 0, 0, 0);
+}
+
+.loginButton{
+      -fx-background-color:#880808;
+}
+
+.loginButton:hover{
+     -fx-font-weight: bold;
+      -fx-font-size: 16px;
+     -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+
+.cancelButton{
+    -fx-background-color:#880808;
+}
+.cancelButton:hover{
+     -fx-font-weight: bold;
+      -fx-font-size: 16px;
+     -fx-background-color:#B51D2B;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+
+.signupButton{
+    -fx-background-color:#880808;
+}
+
+.signupButton:hover{
+        -fx-font-weight: bold;
+         -fx-font-size: 12px;
+        -fx-background-color:#B51D2B;
+       -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+
+
+
+
+
