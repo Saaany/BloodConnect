@@ -66,4 +66,4 @@
 
 
 ## User side event pages
-<img src="assets/24.events_from_user_end.PNG" alt="event list" width = "300">
+<img src="assets/24. events_from_user_end.PNG" alt="event list" width = "300">
