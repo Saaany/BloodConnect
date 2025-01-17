@@ -2,15 +2,18 @@
 YT Link : https://www.youtube.com/watch?v=9GCHlvoJW8U&t=128s&ab_channel=al-aminsany
 
 
-
 ## Login Pages
-<img src="assets/1.login.PNG" alt="login" width="300">
-<img src="assets/2.user_login.PNG" alt="user login" width="300">
-<img src="assets/3.bbm_login.PNG" alt="blood bank manager login" width="300">
+<p align="center">
+  <img src="assets/1.login.PNG" alt="login" width="300">
+  <img src="assets/2.user_login.PNG" alt="user login" width="300">
+  <img src="assets/3.bbm_login.PNG" alt="blood bank manager login" width="300">
+</p>
 
 ## Home Pages
-<img src="assets/4.homepage.PNG" alt="user homepage" width="300">
-<img src="assets/14.bbm_homepage.PNG" alt="blood bank manager homepage" width="300">
+<p align="center">
+  <img src="assets/4.homepage.PNG" alt="user homepage" width="300">
+  <img src="assets/14.bbm_homepage.PNG" alt="blood bank manager homepage" width="300">
+</p>
 
 ## User Pages
 ### New Blood Request
@@ -57,8 +60,10 @@ YT Link : https://www.youtube.com/watch?v=9GCHlvoJW8U&t=128s&ab_channel=al-amins
 <img src="assets/15.blood_count_update.PNG" alt="update blood stock" width = "300">
 
 ### Event List
-<img src="assets/21.event_list.PNG" alt="event list" width = "300">
-<img src="assets/22.event_list_2.PNG" alt="event list" width = "300">
+<p>
+  <img src="assets/21.event_list.PNG" alt="event list" width = "300">
+  <img src="assets/22.event_list_2.PNG" alt="event list" width = "300">
+</p>
 
 ### Event Creation
 <img src="assets/20.create_event.PNG.PNG" alt="event details" width = "300">
